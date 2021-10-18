@@ -1,4 +1,4 @@
-package Td1.ArbreGenerique;
+package Td1.Arbre;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FeuilleTest {
-    Feuille F1 = new Feuille();
+    Feuille f1 = new Feuille(2);
 
     @BeforeEach
     void setUp() {
@@ -19,6 +19,6 @@ class FeuilleTest {
 
     @Test
     void taille() {
-        assertEquals();
+        assertEquals(f1.taille(),1);
     }
 }
