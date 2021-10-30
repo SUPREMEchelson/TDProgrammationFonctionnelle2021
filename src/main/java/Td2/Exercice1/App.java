@@ -4,6 +4,7 @@ import java.util.List;
 
 public class App {
     public static void main(String args[]){
+
         Somme<Integer> sommeInteger = ((x1, x2) -> {
             return x1+x2;
         }
@@ -20,6 +21,8 @@ public class App {
         Integer resultatDeSomme = sommeInteger.somme(4,8);
         Double resultatDouble = sommeDouble.somme(3.0,4.0);
         Long resultatLong = sommeLong.somme(100L,100L);
+
+
 
 
 
@@ -72,8 +75,17 @@ Supplier
         */
 
         // question 3
+       /*
 
 
+    Function : Convertie un type vers un autre type (T t)-> (Y t)
+    Predicat : Prend une valuer en arguement et a pour type de retour un boolean (x)->boolean
+    BiPredicate : Prend deux valeurs en arguments et a pour type de retour un boolean (x,y)->boolean
+    Supplier : Ne prend pas d'arguments et retourne une valeur ()->T
+    Cosumer : Prend un argument mais n'a pas de type de retour (T)-> void
+
+
+        */
 
 /* Predicate ->
 Function : Convertie (map) un type vers un autre. Lambda avec une
