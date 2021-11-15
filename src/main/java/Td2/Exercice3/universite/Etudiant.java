@@ -8,6 +8,8 @@ public class Etudiant {
     private String prenom;
     private String nom;
     private String numero;
+
+
     private Map<Matiere, Double> notes;
     private Annee annee;
 

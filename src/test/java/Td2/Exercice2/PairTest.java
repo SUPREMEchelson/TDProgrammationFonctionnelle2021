@@ -10,6 +10,5 @@ class PairTest {
     Pair<Integer,Double> bob = new Pair<>(170,70.5);
     @Test
     void testFst() {
-assertEquals(170,bob.fst,);
     }
 }

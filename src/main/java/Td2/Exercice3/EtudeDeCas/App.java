@@ -5,6 +5,7 @@ import Td2.Exercice3.universite.Etudiant;
 import Td2.Exercice3.universite.Matiere;
 import Td2.Exercice3.universite.UE;
 
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Predicate;
@@ -31,7 +32,8 @@ public class App {
         e3.noter(m2, 5.0);
         e3.noter(m3, 14.0);
 
-        afficheSi("Les etudiants pour lesquel le predicat est vrai", e->true,a1);
+       afficheSi("Les etudiants pour lesquel le predicat est vrai", e->true,a1);
+        //aDef("Les etudiants defaillants",e->true,a1, e1);
 
     }
     public static void afficheSi(String chaine, Predicate<Etudiant> e1, Annee a1){
@@ -42,5 +44,19 @@ public class App {
                 System.out.println(etudiant);
         });
     }
+
+
+    /*public static void aDef(String chaine, Predicate<Etudiant> e1, Annee a1){
+        System.out.println(chaine);
+                a1.etudiants().forEach(etudiant -> {etudiant.notes();
+                    if(e1.test(etudiant))
+                        System.out.println(etudiant);
+               });
+    }
+   */
+    /*
+private static Predicate<Etudiant> aNoteEliminatoire = e->{
+        Iterator<Map.Entry<Matiere,Double>>
+    }*/
 
 }

@@ -1,10 +1,14 @@
 package Td2.Exercice2;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 public class App {
     public static void main(String arg[]){
+
+        List<Predicate<Integer>> listePredicat = new ArrayList<Predicate<Integer>>();
 
 
         Pair<Double,Integer> Mathieu = new Pair<>(175.0,70);
@@ -35,6 +39,15 @@ public class App {
         BiPredicate<Pair<Double,Integer>,Pair<Double,Integer>> Couple = (Pair<Double,Integer> x,Pair<Double,Integer> y)
                 ->  x.fst> 100 && x.fst<200 && y.snd<150;
 
+        /*  Mathieu.listePredicat.add(tailleCorrecte);
+        Mathieu.listePredicat.add(tailleIncorecte);
+        Mathieu.listePredicat.add(tailleTropGrand);
+        Mathieu.listePredicat.add(tailleTropPetit);
+*/
+
+
+
+/*
         System.out.println(poidsCorrecte.test(100));
         System.out.println(poidsTropLourd.test(210));
         System.out.println(tailleCorrecte.test(180));
@@ -49,7 +62,7 @@ public class App {
         System.out.println(tailleIncorectePair.test(Balaji));
         System.out.println(poidsTropLourdPair.test(Rigo));
 
-
+*/
 
     }
 }
